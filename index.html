@@ -8,51 +8,51 @@
 </head>
 
 <body class="content-wrapper">
-  <header class="header" id="eisenhower-matrix">
-    <img class="img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-    <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <header class="header" class="matrix">
+    <img class="img matrix__picture" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+    <a class="matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main-wrapper">
-    <section id="add-task">
-      <h3 class="heading">Add Item</h3>
-      <div class="new-task-item">
-        <input id="new-task" class="textbox task-description" type="text">
-        <button class="btn add-task">Add</button>
+    <section class="section" id="add-task">
+      <h3 class="section__heading">Add Item</h3>
+      <div class="task" id="new-task">
+        <input type="text" class="task__textbox">
+        <button class="btn task__btn task__btn--add">Add</button>
       </div>
     </section>
-    <section id="incomplete-tasks">
-      <h3 class="heading">Todo</h3>
+    <section class="section" id="incomplete-tasks">
+      <h3 class="section__heading">Todo</h3>
       <ul class="task-list">
-        <li class="task-item">
-          <input type="checkbox" class="checkbox">
-          <label class="label task-description">Pay Bills</label>
-          <input type="text" class="textbox task-description">
-          <button class="btn edit-task">Edit</button>
-          <button class="btn delete-task">
-            <img class="img" src="./remove.svg" alt="remove-button-icon">
+        <li class="task">
+          <input type="checkbox" class="task__checkbox">
+          <label class="task__text">Pay Bills</label>
+          <input type="text" class="task__textbox">
+          <button class="btn task__btn task__btn--edit">Edit</button>
+          <button class="btn task__btn task__btn--delete">
+            <img class="img btn__img" src="./remove.svg" alt="remove-button-icon">
           </button>
         </li>
-        <li class="task-item edit-mode">
-          <input type="checkbox" class="checkbox">
-          <label class="label task-description">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="textbox task-description">
-          <button class="btn edit-task">Save</button>
-          <button class="btn delete-task">
-            <img class="img" src="./remove.svg" alt="remove-button-icon">
+        <li class="task task--edit-mode">
+          <input type="checkbox" class="task__checkbox">
+          <label class="task__text">Go Shopping</label>
+          <input type="text" class="task__textbox" value="Go Shopping">
+          <button class="btn task__btn task__btn--edit">Save</button>
+          <button class="btn task__btn task__btn--delete">
+            <img class="img btn__img" src="./remove.svg" alt="remove-button-icon">
           </button>
         </li>
       </ul>
     </section>
-    <section id="completed-tasks">
-      <h3 class="heading">Completed</h3>
+    <section class="section" id="completed-tasks">
+      <h3 class="section__heading">Completed</h3>
       <ul class="task-list">
-        <li class="task-item">
-          <input type="checkbox" class="checkbox" checked>
-          <label class="label task-description">See the Doctor</label>
-          <input type="text" class="textbox task-description">
-          <button class="btn edit-task">Edit</button>
-          <button class="btn delete-task">
-            <img class="img" src="./remove.svg" alt="remove-button-icon">
+        <li class="task">
+          <input type="checkbox" class="task__checkbox" checked>
+          <label class="task__text">See the Doctor</label>
+          <input type="text" class="task__textbox">
+          <button class="btn task__btn task__btn--edit">Edit</button>
+          <button class="btn task__btn task__btn--delete">
+            <img class="img btn__img" src="./remove.svg" alt="remove-button-icon">
           </button>
         </li>
       </ul>
