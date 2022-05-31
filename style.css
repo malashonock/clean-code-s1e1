@@ -41,7 +41,7 @@
   flex-grow: 1
 }
 
-#new-task {
+.task--new {
   display: flex;
 }
 
@@ -103,15 +103,15 @@ button {
 }
 
 /* New Task */
-#add-task .section__heading {
+.section--add-task .section__heading {
   display: block;
 }
 
-#add-task .task {
+.section--add-task .task {
   border-bottom: none;
 }
 
-#add-task .task__textbox {
+.section--add-task .task__textbox {
   display: block;
   width: 318px;
 }
@@ -157,7 +157,7 @@ button {
 }
 
 /* Completed */
-#completed-tasks .task__text {
+.section--done .task__text {
   text-decoration: line-through;
   color: #888;
 }
